@@ -2,7 +2,7 @@ import React from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { api } from "../../api";
 import useHookGet from "../../hooks/getHook";
-import Button from "../button/button";
+
 import { Details, Trailer, Title, Overview } from "../details/details";
 
 import { tvDetails } from "./types";

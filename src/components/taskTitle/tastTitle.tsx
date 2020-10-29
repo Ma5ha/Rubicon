@@ -1,5 +1,5 @@
 import React from "react";
-import FlexColumn from "../layout/flexColumn";
+
 import FlexWarp from "../layout/flexWarp";
 
 const TaskTitle = () => {
