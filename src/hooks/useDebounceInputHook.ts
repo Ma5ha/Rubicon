@@ -1,28 +1,11 @@
-
-import useInputHook from './inputHook';
-import useDebounce from './useDebounce';
-
-
-
-
+import useInputHook from "./inputHook";
+import useDebounce from "./useDebounce";
 
 const useDebounceInputHook = (arg: string, deley) => {
-    const [input, setInput] = useInputHook(arg)
-    const [debouncedInput] = useDebounce(input, deley)
+  const [input, setInput] = useInputHook(arg);
+  const [debouncedInput] = useDebounce(input, deley);
 
-    return [debouncedInput, setInput]
+  return [debouncedInput, setInput];
+};
 
-
-
-
-
-
-
-}
-
-export default useDebounceInputHook
-
-
-
-
-
+export default useDebounceInputHook;

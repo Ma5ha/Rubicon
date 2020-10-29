@@ -1,7 +1,6 @@
-// import { AxiosRequestConfig } from "axios"; 
+// import { AxiosRequestConfig } from "axios";
 import { useState, useEffect } from "react";
 import getAction from "../actions/getAction";
-
 
 function useHookGet<T>(
   url: string,
