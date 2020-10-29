@@ -11,6 +11,7 @@
     "@types/react": "^16.9.54",
     "@types/react-dom": "^16.9.9",
     "axios": "^0.21.0",
+    "eslint-config-airbnb": "^18.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^3.11.0",
@@ -25,8 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint .",
-    "lint:fix":"eslint --fix ."
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",  
+    "format": "prettier --write .ts,.tsx,.css,.json"
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2",
+    "prettier-airbnb-config": "^1.0.0"
   }
 }
