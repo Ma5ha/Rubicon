@@ -17,8 +17,10 @@ export const Creator = ({ children }) => {
 };
 
 export const Trailer = ({ video }) => {
-  const src = `https://www.youtube.com/embed/${video}`;
-  return <iframe width="100%" height="315" {...{ src }}></iframe>;
+  const src = `https://www.youtube.com/embed/${video} `;
+  return (
+    <iframe width="100%" height="315" {...{ src }} title="no title"></iframe>
+  );
 };
 
 export const Details = ({ children }) => {
