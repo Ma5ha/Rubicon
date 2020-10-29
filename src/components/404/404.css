@@ -1,0 +1,23 @@
+.page404{
+  position: relative;
+    margin:auto;
+    margin-top:20%;
+    text-emphasis: center;
+   
+    
+  
+}
+
+.page404 h1{
+    font-size: large;
+    text-transform: uppercase;
+
+
+}
+.page404 a {
+
+    text-decoration: underline;
+    
+}
+
+

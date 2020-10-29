@@ -1,0 +1,38 @@
+.pagginationBox{
+    display: flex;
+    width: fit-content;
+ 
+  margin: 50px;
+    margin-bottom: 5%;
+    /* border: solid #3f72af; */
+  
+}
+
+.pageP{
+    width: 20px;
+    border: solid #3f72af;
+    margin: 1px;
+    text-align: center;
+   cursor: pointer;
+
+}
+
+
+.activePageP{
+  
+    width: 20px;
+    border: solid #3f72af;
+ margin: 1px;
+    text-align: center;
+    background-color: #dbe2ef;
+    cursor: pointer;
+    
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    color: #3f72af;
+    cursor: pointer;
+}

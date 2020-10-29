@@ -1,0 +1,21 @@
+.creditName{
+    font-family: 'Great Vibes', cursive;
+    text-transform: capitalize;
+    
+}
+
+.creditP{
+    text-align: center;
+    font-size: large;
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+
+span{
+    margin: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
