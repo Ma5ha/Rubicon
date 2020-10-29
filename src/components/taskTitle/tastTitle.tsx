@@ -9,7 +9,7 @@ const TaskTitle = () => {
         <a
           href="https://github.com/Ma5ha/Rubicon"
           target="_blank"
-          ref="noreferrer"
+          rel="noreferrer"
         >
           <h1 className="taskTitle">Rubicon task</h1>
         </a>

@@ -22,8 +22,8 @@ const TvDetails = () => {
     goBack();
   };
   return result ? (
-    <div {...{ className }}>
-      <IoMdArrowRoundBack {...{ onClick }} className="backButton" />
+    <div className={className}>
+      <IoMdArrowRoundBack onClick={onClick} className="backButton" />
 
       <Details>
         {result.videos.results[0] ? (

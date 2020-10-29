@@ -14,8 +14,6 @@ const Tv = () => {
   const debounce = useDebounce(context.query, 1000);
   const { query: value, onChange } = context;
 
-  const placeholder = "search";
-
   const rednerCondtion = debounce.length > 3;
 
   return (
@@ -37,7 +35,7 @@ const Tv = () => {
             <FaFilm />
           </NavLink>
         </div>
-        <SearchBar {...{ value }} {...{ onChange }} {...{ placeholder }} />
+        <SearchBar value={value} onChange={onChange} placeholder={"search"} />
       </NavigationWarper>
       {rednerCondtion ? <TvSearch /> : <TvTop10 />}
     </>
