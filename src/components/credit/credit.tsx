@@ -6,11 +6,15 @@ const Credit = () => {
   const className = "credit";
 
   return (
-    <div {...{ className }}>
+    <div className={className}>
       <p className="creditP">
         Developed by: <span className="creditName">mladen blagovcanin</span>
         <span>
-          <a href="https://github.com/Ma5ha/Rubicon" target="_blank">
+          <a
+            href="https://github.com/Ma5ha/Rubicon"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FiGithub />
           </a>
         </span>
