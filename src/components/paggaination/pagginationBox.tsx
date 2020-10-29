@@ -12,7 +12,7 @@ const PagginationBox = ({ page, total_pages, setPage, showNeighbors = 4 }) => {
   const fastBack = page > showNeighbors;
   const fastForward = page < total_pages - showNeighbors;
   return (
-    <div {...{ className }}>
+    <div className={className}>
       {fastBack ? (
         <CgChevronDoubleLeft
           onClick={() => {
@@ -65,7 +65,7 @@ const Page = ({
   const className = activePage === pageNumber ? "activePageP" : "pageP";
 
   return renderCondition ? (
-    <div {...{ className }} {...{ onClick }}>
+    <div className={className} onClick={onClick}>
       {pageNumber}
     </div>
   ) : null;

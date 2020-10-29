@@ -10,10 +10,10 @@ const SearchBar = ({ value, onChange, placeholder }) => {
   return (
     <form onSubmit={onSubmit}>
       <input
-        {...{ className }}
-        {...{ value }}
-        {...{ onChange }}
-        {...{ placeholder }}
+        className={className}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
       />
     </form>
   );

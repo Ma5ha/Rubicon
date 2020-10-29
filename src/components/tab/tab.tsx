@@ -3,7 +3,7 @@ import "./tab.css";
 const NavigationWarper = (prop) => {
   const className = "navigation";
   return (
-    <div {...prop} {...{ className }}>
+    <div {...prop} className={className}>
       {prop.children}
     </div>
   );

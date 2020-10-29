@@ -3,7 +3,7 @@ import "./scroeCircle.css";
 const ScoreCircle = ({ children }) => {
   const className = "circle";
   return (
-    <div {...{ className }}>
+    <div className={className}>
       <InnerCircle>{children}</InnerCircle>
     </div>
   );
@@ -11,7 +11,7 @@ const ScoreCircle = ({ children }) => {
 
 const InnerCircle = ({ children }) => {
   const className = "innerCircle";
-  return <div {...{ className }}>{children}</div>;
+  return <div className={className}>{children}</div>;
 };
 
 export default ScoreCircle;
