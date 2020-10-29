@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import textClip from "../../hellpers/textClip";
 import Spinner from "../spiner/spinner";
 import Tooltip from "../tooltip/tooltip";
+import DelayMount from "../deleyMount/delayMount";
 
 const Top10Movies = () => {
   const apiUrl = api.base + api.movie_top_rated + api.key;
@@ -26,43 +27,45 @@ const Top10Movies = () => {
   return (
     <FlexWarp>
       {top10 ? (
-        top10.map((show) => (
+        top10.map((show, i) => (
           <FlexColumn key={show.id}>
-            <Link to={`/home/movie/${show.id}`}>
-              <Card klass="boxShadow">
-                <Body>
-                  {show.poster_path === null ? (
-                    noImage
-                  ) : (
-                    <img
-                      src={api.tv_image + show.poster_path}
-                      alt={show.title}
-                    />
-                  )}
-                </Body>
-                <Footer>
-                  <div className="footerGrid padding-4px">
-                    <Tooltip text={show.title}>
+            <DelayMount delay={200 * i}>
+              <Link to={`/home/movie/${show.id}`}>
+                <Card klass="boxShadow flip-in-ver-right">
+                  <Body>
+                    {show.poster_path === null ? (
+                      noImage
+                    ) : (
+                      <img
+                        src={api.tv_image + show.poster_path}
+                        alt={show.title}
+                      />
+                    )}
+                  </Body>
+                  <Footer>
+                    <div className="footerGrid padding-4px">
+                      <Tooltip text={show.title}>
+                        <div>
+                          <h3 className="cardTitle">
+                            {textClip(show.title, 32)}
+                          </h3>
+                        </div>
+                      </Tooltip>
                       <div>
-                        <h3 className="cardTitle">
-                          {textClip(show.title, 32)}
-                        </h3>
+                        <p className="cardSecond">
+                          Air date: <i>{show.release_date}</i>
+                        </p>
                       </div>
-                    </Tooltip>
-                    <div>
-                      <p className="cardSecond">
-                        Air date: <i>{show.release_date}</i>
-                      </p>
-                    </div>
-                    <div>
-                      <div className="floatRight">
-                        <ScoreCircle>{show.vote_average}</ScoreCircle>
+                      <div>
+                        <div className="floatRight">
+                          <ScoreCircle>{show.vote_average}</ScoreCircle>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Footer>
-              </Card>
-            </Link>
+                  </Footer>
+                </Card>
+              </Link>
+            </DelayMount>
           </FlexColumn>
         ))
       ) : (
