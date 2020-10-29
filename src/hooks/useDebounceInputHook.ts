@@ -1,11 +1,17 @@
 import { useState } from 'react';
-
-
+import useInputHook from './inputHook';
 import useDebounce from './useDebounce';
 
 
+
+
+
 const useDebounceInputHook = (arg: string, deley) => {
-    const [value, setValue] = useState()
+    const [input, setInput] = useInputHook(arg)
+    const [debouncedInput] = useDebounce(input, deley)
+
+    return [debouncedInput, setInput]
+
 
 
 
@@ -15,3 +21,8 @@ const useDebounceInputHook = (arg: string, deley) => {
 }
 
 export default useDebounceInputHook
+
+
+
+
+
