@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders elements <a/> <p/> <h1/> 1`] = `
+<div
+  className="navigation"
+>
+  <h1>
+    Rubicon
+  </h1>
+   
+  <a>
+    Rubicon
+  </a>
+   
+  <p>
+    Rubicon
+  </p>
+</div>
+`;
