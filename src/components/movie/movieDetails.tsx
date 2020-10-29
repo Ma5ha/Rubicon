@@ -3,7 +3,7 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 import { useParams, useHistory } from "react-router-dom";
 import { api } from "../../api";
 import useHookGet from "../../hooks/getHook";
-import Button from "../button/button";
+
 import { Details, Trailer, Title, Overview } from "../details/details";
 import Spinner from "../spiner/spinner";
 
@@ -15,19 +15,18 @@ const MovieDetails = () => {
   const url = `${api.base}movie/${id}?${api.key}&append_to_response=videos`;
   const [result] = useHookGet<movieDetailsResponse>(url);
 
-  const className = "details";
   const onClick = () => {
     goBack();
   };
   return result ? (
-    <div {...{ className }}>
-      <IoMdArrowRoundBack {...{ onClick }} className="backButton" />
+    <div className={"details"}>
+      <IoMdArrowRoundBack onClick={onClick} className="backButton" />
 
       <Details>
         {result.videos.results[0] ? (
           <Trailer video={result.videos.results[0].key} />
         ) : (
-          <img src={api.tv_image + `/${result.poster_path}`} />
+          <img src={api.tv_image + `/${result.poster_path}`} alt="empty" />
         )}
 
         <div className="padding-2">
