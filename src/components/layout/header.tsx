@@ -5,7 +5,7 @@ export const Header = () => {
   const className = "header";
 
   return (
-    <div {...{ className }}>
+    <div className={className}>
       <TaskTitle />
     </div>
   );

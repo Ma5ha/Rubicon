@@ -6,7 +6,7 @@ export const Main = () => {
   const className = "main";
 
   return (
-    <div {...{ className }}>
+    <div className={className}>
       <Switch>
         <Route exact path="/">
           <Redirect

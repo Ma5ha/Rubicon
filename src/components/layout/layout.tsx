@@ -7,7 +7,7 @@ const Layout = () => {
   const className = "layout";
 
   return (
-    <div {...{ className }}>
+    <div className={className}>
       <Header />
       <Main />
       <Footer />
