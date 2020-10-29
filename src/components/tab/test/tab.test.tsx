@@ -1,4 +1,5 @@
 import React from "react";
+import { isElement, mockComponent } from "react-dom/test-utils";
 import renderer from "react-test-renderer";
 import NavigationWarper from "../tab";
 
@@ -11,4 +12,8 @@ it("renders elements <a/> <p/> <h1/>", () => {
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
+});
+
+it("is react element", () => {
+  isElement(<NavigationWarper></NavigationWarper>);
 });
