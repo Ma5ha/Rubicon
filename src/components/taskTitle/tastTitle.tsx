@@ -6,7 +6,11 @@ const TaskTitle = () => {
   return (
     <FlexWarp>
       <div className="taskHeader">
-        <a href="https://github.com/Ma5ha/Rubicon" target="_blank">
+        <a
+          href="https://github.com/Ma5ha/Rubicon"
+          target="_blank"
+          ref="noreferrer"
+        >
           <h1 className="taskTitle">Rubicon task</h1>
         </a>
       </div>
