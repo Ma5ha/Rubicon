@@ -1,6 +1,12 @@
 import React from "react";
+import { ReactElement } from "react";
 import "./card.css";
-const Card = ({ klass, children }) => {
+
+interface props {
+  klass: string;
+  children: ReactElement[];
+}
+const Card = ({ klass, children }: props) => {
   const className = `card ${klass}`;
   return <div className={className}>{children}</div>;
 };
