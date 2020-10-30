@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-Or if you have downloaded deployBranch it will start with express server.
+Or if you have downloaded deployBranch it will start with express server on [http://localhost:8080](http://localhost:8080).
 
 ### `npm test`
 
