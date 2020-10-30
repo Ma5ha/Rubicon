@@ -24,5 +24,5 @@ act(() => {
   testInstance = create(<NavigationWarper children={2} />);
 });
 
-test("chldren prop to be 2 ", () =>
+test("chldren prop to be 2", () =>
   expect(testInstance.toTree().props.children).toBe(2));
