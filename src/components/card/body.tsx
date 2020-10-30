@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactElement } from "react";
 
 const Body = ({ children }) => {
   const className = "cardBody";

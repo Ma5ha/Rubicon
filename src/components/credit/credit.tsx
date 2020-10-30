@@ -3,7 +3,7 @@ import "./credit.css";
 
 import { FiGithub } from "react-icons/fi";
 const Credit = () => {
-  const className = "credit";
+  const className: string = "credit";
 
   return (
     <div className={className}>
