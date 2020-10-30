@@ -1,9 +1,9 @@
 # Rubicon task
 
-This application is made as test task by Rubicon company. The application is available on [Heroku](https://rubicon-task.herokuapp.com/).As per requirements it does not include Bootstrap, but a custom layout system.Dependencies that are included in the app are: React, React-router-dom, Axios and React icons.
+This application is made as test task by Rubicon company. The application is available on [Heroku](https://rubicon-task.herokuapp.com/). As per requirements it does not include Bootstrap, but a custom layout system.Dependencies that are included in the app are: React, React-router-dom, Axios and React icons.
 The application is bootstrapped with create-react-app.
 
-To run application in local environment download master or deployBranch. Firstly run npm install to install dependencies, than npm start to start the server. On more available script for the application read the rest of README.Md.
+To run application in local environment download master or deployBranch. Firstly, run `npm install` to install dependencies, than `npm start` to start the server. On more available script for the application read the rest of README.Md.
 
 ## Available Scripts
 
